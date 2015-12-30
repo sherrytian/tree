@@ -1,0 +1,81 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="utf-8">
+	<title>树形菜单</title>
+	<link rel="stylesheet" type="text/css" href="tree.min.css">
+</head>
+<body>
+<div class="content">
+	<ul class="tree" id="tree">
+		<li>
+			<a href="#">一级菜单</a>
+			<ul>
+				<li>
+					<a href="#">二级菜单</a>
+					<ul>
+						<li><a href="#">三级菜单</a></li>
+						<li><a href="#">三级菜单</a></li>
+						<li><a href="#">三级菜单</a></li>
+					</ul>
+				</li>
+				<li>
+					<a href="#">二级菜单</a>
+					<ul>
+						<li><a href="#">三级菜单</a></li>
+						<li><a href="#">三级菜单</a></li>
+						<li><a href="#">三级菜单</a></li>
+					</ul>
+				</li>
+				<li>
+					<a href="#">二级菜单</a>
+					<ul>
+						<li><a href="#">三级菜单</a></li>
+						<li><a href="#">三级菜单</a></li>
+						<li><a href="#">三级菜单</a></li>
+					</ul>
+				</li>
+			</ul>
+		</li>
+		<li>
+			<a href="#">一级菜单</a>
+			<ul>
+				<li>
+					<a href="#">二级菜单</a>
+					<ul>
+						<li><a href="#">三级菜单</a></li>
+						<li><a href="#">三级菜单</a></li>
+						<li><a href="#">三级菜单</a></li>
+					</ul>
+				</li>
+				<li>
+					<a href="#">二级菜单</a>
+					<ul>
+						<li><a href="#">三级菜单</a></li>
+						<li><a href="#">三级菜单</a></li>
+						<li><a href="#">三级菜单</a></li>
+					</ul>
+				</li>
+				<li>
+					<a href="#">二级菜单</a>
+					<ul>
+						<li><a href="#">三级菜单</a></li>
+						<li><a href="#">三级菜单</a></li>
+						<li><a href="#">三级菜单</a></li>
+					</ul>
+				</li>
+			</ul>
+		</li>
+	</ul>
+</div>
+<script type="text/javascript" src="jquery.js"></script>
+<script type="text/javascript" src="tree.js"></script>
+<script type="text/javascript">
+	$('#tree').tree({
+				'child':'li',
+				'targetElement':'a',
+				'defaultsMode':'hide'
+			});
+</script>
+</body>
+</html>

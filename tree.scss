@@ -1,0 +1,33 @@
+@import "_reset.scss";
+.content{
+	width:300px;
+	margin:20px auto;
+	border:1px solid #ddd;
+	a{
+		font-size:14px;
+		color:#000;
+	}
+}
+
+.tree{
+	li{
+		margin:10px 0;
+		padding-left:1em;
+		overflow:hidden;
+		a{
+			display:inline-block;
+			height:20px;
+			padding-left:25px;
+			line-height:20px;
+			&.plus{
+				background:url(plus.png) no-repeat 0 2px;
+			}
+			&.minus{
+				background:url(minus.png) no-repeat 0 2px;
+			}
+		}
+		
+	}
+	
+	
+}
